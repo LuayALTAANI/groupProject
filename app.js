@@ -47,3 +47,16 @@ function YesOrNo(value) {
     if (value == true) return "Yes";
     else return "No";
 }
+
+employeeName.textContent = priyaNair.name;
+role.textContent = priyaNair.targetRole;
+YearsOfExperience.textContent = priyaNair.YearsOfExperience;
+education.textContent = priyaNair.education;
+skills.textContent = priyaNair.skills.join(", ");
+certifications.textContent = priyaNair.certifications.join(", ");
+languagesSpoken.textContent = priyaNair.languagesSpoken.join(", ");
+portfolioLink.textContent = priyaNair.portfolioLink;
+WillingToRelocate.textContent = priyaNair.WillingToRelocate;
+remoteWorkPreferred.textContent = priyaNair.remoteWorkPreferred;
+softSkills.textContent = priyaNair.softSkills;
+openToInternship.textContent = priyaNair.openToInternship;
