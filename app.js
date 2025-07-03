@@ -43,15 +43,7 @@ let priyaNair = new Person(
     false
 );
 
-employeeName.textContent = priyaNair.name;
-role.textContent = priyaNair.targetRole;
-YearsOfExperience.textContent = priyaNair.YearsOfExperience;
-education.textContent = priyaNair.education;
-skills.textContent = priyaNair.skills.join(", ");
-certifications.textContent = priyaNair.certifications.join(", ");
-languagesSpoken.textContent = priyaNair.languagesSpoken.join(", ");
-portfolioLink.innerHTML = `<a href="${priyaNair.portfolioLink}">${priyaNair.portfolioLink}</a>`;
-WillingToRelocate.textContent = priyaNair.WillingToRelocate ? "Yes" : "No";
-remoteWorkPreferred.textContent = priyaNair.remoteWorkPreferred ? "Yes" : "No";
-softSkills.textContent = priyaNair.softSkills.join(", ");
-openToInternship.textContent = priyaNair.openToInternship ? "Yes" : "No";
+function YesOrNo(value) {
+    if (value == true) return "Yes";
+    else return "No";
+}
