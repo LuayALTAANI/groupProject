@@ -3,17 +3,22 @@ h1 {
     font-size: 45px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     padding: 1em;
     font-size: 19px;
 }
 
-#output{
+#output {
     font-size: 45px;
-    color: black; 
-    
+    color: black;
+
 }
 
-
-
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
