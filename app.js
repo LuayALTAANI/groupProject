@@ -1,4 +1,15 @@
-let output = document.getElementById("output");
+const employeeName = document.querySelector("#fullname");
+const role = document.querySelector("#role");
+const YearsOfExperience = document.querySelector("#experience");
+const education = document.querySelector("#education");
+const skills = document.querySelector("#skills");
+const certifications = document.querySelector("#certification");
+const languagesSpoken = document.querySelector("#languages");
+const portfolioLink = document.querySelector("#portfolio");
+const WillingToRelocate = document.querySelector("#relocate");
+const remoteWorkPreferred = document.querySelector("#remote");
+const softSkills = document.querySelector("#softskills");
+const openToInternship = document.querySelector("#internship");
 
 function Person(name, location, targetRole, YearsOfExperience, education, skills, certifications, languagesSpoken, portfolioLink, WillingToRelocate, remoteWorkPreferred, softSkills, openToInternship) {
     this.name = name;
@@ -23,7 +34,7 @@ let priyaNair = new Person(
     3,
     "Bcs in Statistics, University of Toronto",
     ["Python", "SQL", "Tableau", "Excel"],
-    ["GOOGLE data analytics", "IBM data analytics"],
+    ["Google data analytics", "IBM data analytics"],
     ["English", "Hindi", "Tamil"],
     "https://priyanairdata.ca",
     false,
@@ -36,39 +47,3 @@ function YesOrNo(value) {
     if (value == true) return "Yes";
     else return "No";
 }
-
-let fullname = document.getElementById("fullname");
-fullname.textContent = priyaNair.name;
-
-let role = document.getElementById("role");
-role.textContent = priyaNair.targetRole;
-
-let experience = document.getElementById("experience");
-experience.textContent = priyaNair.YearsOfExperience;
-
-let education = document.getElementById("education");
-education.textContent = priyaNair.education;
-
-let skills = document.getElementById("skills");
-skills.textContent = priyaNair.skills.join(", ");
-
-let certification = document.getElementById("certification");
-certification.textContent = priyaNair.certifications.join(", ");
-
-let languagesSpoken = document.getElementById("languages");
-languagesSpoken.textContent = priyaNair.languagesSpoken.join(", ");
-
-let portfolioLink = document.getElementById("portfolio");
-portfolioLink.textContent = priyaNair.portfolioLink;
-
-let WillingToRelocate = document.getElementById("relocate");
-WillingToRelocate.textContent = priyaNair.WillingToRelocate;
-
-let remoteWorkPreferred = document.getElementById("remote");
-remoteWorkPreferred.textContent = priyaNair.remoteWorkPreferred;
-
-let softSkills = document.getElementById("softskills");
-softSkills.textContent = priyaNair.softSkills.join(", ");
-
-let openToInternship = document.getElementById("internship");
-openToInternship.textContent = priyaNair.openToInternship;
