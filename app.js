@@ -31,3 +31,8 @@ let priyaNair = new Person(
     ["Detail-oriented", "Analytical thinking"],
     false
 );
+
+function YesOrNo(value) {
+    if (value == true) return "Yes";
+    else return "No";
+}
