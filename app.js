@@ -36,3 +36,39 @@ function YesOrNo(value) {
     if (value == true) return "Yes";
     else return "No";
 }
+
+let fullname = document.getElementById("fullname");
+fullname.textContent = priyaNair.name;
+
+let role = document.getElementById("role");
+role.textContent = priyaNair.targetRole;
+
+let experience = document.getElementById("experience");
+experience.textContent = priyaNair.YearsOfExperience;
+
+let education = document.getElementById("education");
+education.textContent = priyaNair.education;
+
+let skills = document.getElementById("skills");
+skills.textContent = priyaNair.skills.join(", ");
+
+let certification = document.getElementById("certification");
+certification.textContent = priyaNair.certifications.join(", ");
+
+let languagesSpoken = document.getElementById("languages");
+languagesSpoken.textContent = priyaNair.languagesSpoken.join(", ");
+
+let portfolioLink = document.getElementById("portfolio");
+portfolioLink.textContent = priyaNair.portfolioLink;
+
+let WillingToRelocate = document.getElementById("relocate");
+WillingToRelocate.textContent = priyaNair.WillingToRelocate;
+
+let remoteWorkPreferred = document.getElementById("remote");
+remoteWorkPreferred.textContent = priyaNair.remoteWorkPreferred;
+
+let softSkills = document.getElementById("softskills");
+softSkills.textContent = priyaNair.softSkills.join(", ");
+
+let openToInternship = document.getElementById("internship");
+openToInternship.textContent = priyaNair.openToInternship;
